@@ -21,7 +21,7 @@ public class RandomAlgoritm {
         return result;
     }
 
-    public Stream<Long> LineCongurentGenerator(int seed){
+    public Stream<Long> lineCongurentGenerator(int seed){
         Long seedInher = Long.valueOf(seed);
         if(seedInher != 0) {
             final Stream<Long> iterate = Stream.iterate(seedInher, n -> next(n));

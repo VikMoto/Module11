@@ -8,7 +8,7 @@ public class RandomAlgoritmStream {
     public static void main(String[] args) {
 
         RandomAlgoritm r = new RandomAlgoritm(25214903917L, 11L, powMy(2,48));
-        r.LineCongurentGenerator(2)
+        r.lineCongurentGenerator(2)
                 .limit(10)
                 .peek(System.out::println)
                 .collect(Collectors.toList());
